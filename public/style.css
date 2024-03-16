@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.head{
+    background-color: bisque;
+    color: rgb(5, 17, 244);
+    text-align: center;
+    padding: 10px;
+}
+
+#mainDiv{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.elements{
+    background-color: white;
+    color: black;
+    /* margin: 10px;
+    padding: 5px; */
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.button1 {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button2 {
+    background-color: #2030e5; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+}  
+
+.button-container{
+    display: flex;
+    gap: 10px;
+
+}
+
+.edit-create{
+    text-align: center;
+    padding: 10px;
+    margin: 400px,0px;
+}
+
+.para{
+    word-wrap: break-word;
+}
+
+/* p{
+    width: 100%;
+} */
+
+*{
+    border: 1px solid red;
+}

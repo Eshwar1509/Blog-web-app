@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog web-app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="head">
+        <h1>Blog web application</h1>
+        <form action="/submit" method="post">
+            <button class="button1" type="submit">NEW BLOG</button>
+        </form>
+    </header>
+    
+    <div id="mainDiv">
+        <% if(locals.arr){ %>
+        
+            <% for(var i=0; i<arr.length; i++){ %>
+                <div class="elements">
+                    <h3><%= locals.arr[i].title %></h3>
+                    <p><%= locals.arr[i].content %></p>
+                    <div class="button-container">
+                        <a class="button2" href="/edit/<%= arr[i].id %>">EDIT</a>
+                        <form method="post" action="/delete/<%= arr[i].id %>">
+                            <button class="button2" type="submit">DELETE</button>
+                        </form>    
+                    </div>
+                </div>
+            <% } %>
+        
+        <% } %>    
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
